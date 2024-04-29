@@ -7,9 +7,10 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
 * [Formatadores](src/formatadores)
   Aqui constam as classes que ocupam única e exclusivamente a função de gerar o texto formatado, bem como a classe abstrata pai.
   * [Formatador](src/formatadores/Formatador.java) - É a base dos outros formatadores, possuindo um método formatar, que recebe uma instância da classe T e retorna uma String, isto é, o texto formatado.
-  * [Formatador Ano-Mês-Dia](src/formatadores/FormatadorAnoTraçoMêsTraçoDia.java) - Formata uma data seguindo o formato "yyyy-MM-dd"; Implementa Formatador\&lt;Data\&lt;.
-  * [Formatador Dia/Mês/Ano](src/formatadores/FormatadorDiaBarraMêsBarraAno.java) Formata uma data seguindo o formato "dd/MM/yyyy"; Implementa Formatador\&lt;Data\&lt;.
-  * [Formatador Dia de Mês de Ano](src/formatadores/FormatadorDiaDeMêsDeAno.java) Formata uma data seguindo o formato "dd de (mês por extenso) de yyyy"; Implementa Formatador\&lt;Data\&lt;.
-  * [Formatador Iniciais da Pessoa](src/formatadores/FormatadorPessoaIniciais.java) "Formata uma pessoa" a partir de suas iniciais no nome completo; Implementa Formatador\&lt;Pessoa\&lt;.
-  * [Formatador Nome e Sobrenome](src/formatadores/FormatadorPessoaNomeSobrenome.java) "Formata uma pessoa" juntando nome e sobrenome; Implementa Formatador\&lt;Pessoa\&lt;.
-* [UI](src/ui)
+  * [Formatador Ano-Mês-Dia](src/formatadores/FormatadorAnoTraçoMêsTraçoDia.java) - Formata uma data seguindo o formato "yyyy-MM-dd"; Implementa Formatador&lt;Data&gt;.
+  * [Formatador Dia/Mês/Ano](src/formatadores/FormatadorDiaBarraMêsBarraAno.java) - Formata uma data seguindo o formato "dd/MM/yyyy"; Implementa Formatador&lt;Data&gt;.
+  * [Formatador Dia de Mês de Ano](src/formatadores/FormatadorDiaDeMêsDeAno.java) - Formata uma data seguindo o formato "dd de (mês por extenso) de yyyy"; Implementa Formatador&lt;Data&gt;.
+  * [Formatador Iniciais da Pessoa](src/formatadores/FormatadorPessoaIniciais.java) - "Formata uma pessoa" a partir de suas iniciais no nome completo; Implementa Formatador&lt;Pessoa&gt;.
+  * [Formatador Nome e Sobrenome](src/formatadores/FormatadorPessoaNomeSobrenome.java) - "Formata uma pessoa" juntando nome e sobrenome; Implementa Formatador&lt;Pessoa&gt;.
+* [UI](src/ui) - Contém as classes relacionadas à interface gráfica.
+  * 
