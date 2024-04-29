@@ -1,4 +1,7 @@
 # FormatadorSOLID
-## Descrição dos Pacotes
-[Formatadores](src/formatadores)
-[UI](src/ui)
+## O que é?
+
+## Descrição do código fonte
+* [Formatadores](src/formatadores)
+  * Exemplo
+* [UI](src/ui)
