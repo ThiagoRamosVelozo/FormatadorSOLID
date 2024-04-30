@@ -14,4 +14,5 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
   * [Formatador Nome e Sobrenome](src/formatadores/FormatadorPessoaNomeSobrenome.java) - "Formata uma pessoa" juntando nome e sobrenome; Implementa Formatador&lt;Pessoa&gt;.
 * [UI](src/ui) - Contém as classes relacionadas à interface gráfica.
   * [Janela](src/ui/Janela.java) - Classe estendendo JFrame, é essencialmente onde é definida a janela. Também é nessa classe que são instanciados os painéis e definido o layout geral em tabs.
+  * [Inicializador de Look and Feel](src/ui/LookAndFeelInitializer.java) - Classe responsável pela inicialização do "Look and Feel" e ajustes nesse mesmo.
   * 
