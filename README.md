@@ -19,7 +19,7 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
   * [Painéis](src/ui/paineis) - Pacote no qual constam painéis (JPanel) que serão instanciados e inclusos pela Janela na GUI.
     * [Painel de formatação de datas](src/ui/paineis/PainelData.java) - Painel que consiste em um formulário de entrada de atributos da data (dia, mês, ano) e formato, e botão para apresentar a data formatada logo abaixo.
     * [Painel de formatação de pessoas](src/ui/paineis/PainelPessoa.java) - Painel que consiste em um formulário de entrada de atributos da pessoa (CPF, nome, sobrenome) e formato, e botão para apresentar a pessoa "formatada" logo abaixo.
-* main.Main - O programa começa nessa classe, por meio do método estático "main". Aqui é inicializado o Look and Feel por meio do LookAndFeelInitializer, instanciada e aberta a Janela.
+* [main.Main](src/main/Main.java) - O programa começa nessa classe, por meio do método estático "main". Aqui é inicializado o Look and Feel por meio do LookAndFeelInitializer, instanciada e aberta a Janela.
 ## Exemplos de princípios SOLID sendo seguidos no código
 ### Single Responsibility Principle
 * Na classe Formatador esse princípio é aplicado pois as funcionalidades descritas no formatador tem responsabilidade única, sem incoerências ou "parafernalhas multiuso": formatar objetos.
