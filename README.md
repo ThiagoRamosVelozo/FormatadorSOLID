@@ -31,3 +31,10 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
 * A interface Formatador possibilita a implementação da formatação para vários tipos de objeto (por meio de Generics) e assim retira a necessidade de implementar um Formatador base específico para cada tipo de objeto.
 ### Liskov Substitution Principle
 * Devido a existência do contrato proposto em "formatar(T objeto)" entre diferentes classes, é possível, por exemplo, substituir um FormatadorPessoaIniciais por FormatadorPessoaNomeSobrenome sem maiores danos ou retrabalho.
+## 3 Design Patterns utilizados
+### Composite
+Esse padrão é abundantemente usado nas classes de GUI do programa, visto que todo componente gráfico herda de uma mesma classe "Component/JComponent" e podem conter outros componentes (JPanel sendo um exemplo por excelência). O uso desse padrão se faz crucial, uma vez que permite criar componentes como composições de outros, do exato modo que as interfaces gráficas são construídas. Em um cenário em que essa composição não existe cada componente ficaria isolado, tornando muito mais trabalhosa e disfuncional a montagem da interface, ou até mesmo inviável.
+### Singleton
+A classe Janela possui um método estático "getInstance()" que retorna sempre a mesma instância da classe, que é inicializada como nula e só é criada uma vez no método, se ainda não existir. Isso garante que, durante toda a execução do programa, haverá apenas uma única instância, proporcionando um único ponto de acesso global para essa funcionalidade.
+### Observer
+Para conferir funcionalidade aos botões, por exemplo, utiliza-se do método "addActionListener", que associa um "Listener" ao evento do clique do botão. Isso é essencialmente uma implementação análoga do padrão Observer. O listener "escuta" a um dado evento e invoca um método ao "percebê-lo". Observa-se aqui a proposta básica desse padrão, algo nota um evento, desencadeando em uma ação.
