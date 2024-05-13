@@ -1,7 +1,7 @@
 
 package ui;
 
-import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.FlatDarkLaf;
 import javax.swing.UIManager;
 
 public interface LookAndFeelInitializer {
@@ -9,7 +9,7 @@ public interface LookAndFeelInitializer {
     static void init() {
         
         try {
-            UIManager.setLookAndFeel(new FlatLightLaf());
+            UIManager.setLookAndFeel(new FlatDarkLaf());
         } catch (Exception x) {
             
         }

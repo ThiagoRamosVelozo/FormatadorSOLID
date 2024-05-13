@@ -11,7 +11,7 @@ public class Main {
         
         LookAndFeelInitializer.init();
         
-        SwingUtilities.invokeLater(()->{new Janela().setVisible(true);});
+        SwingUtilities.invokeLater(()->{Janela.getInstance().setVisible(true);});
         
     }
     
