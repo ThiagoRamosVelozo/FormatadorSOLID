@@ -18,16 +18,20 @@ import ui.paineis.PainelPessoa;
 
 public class Janela extends JFrame {
     
+    private static Janela instance;
+    
+    public static Janela getInstance() {
+        if (instance == null) instance = new Janela();
+        return instance;
+    }
+    
     JTabbedPane tabs;
-    JPanel container;
     ArrayList<Formatador<Data>> formatadoresData;
     ArrayList<Formatador<Pessoa>> formatadoresPessoa;
 
-    public Janela() {
+    private Janela() {
         
-        container = new JPanel(new GridLayout(1,1));
-        
-        tabs = new JTabbedPane(JTabbedPane.VERTICAL);
+        tabs = new JTabbedPane(JTabbedPane.LEFT);
         
         formatadoresData = new ArrayList<>();
         formatadoresData.add(new FormatadorAnoTraçoMêsTraçoDia());
@@ -42,9 +46,7 @@ public class Janela extends JFrame {
         
         tabs.add(new PainelPessoa(formatadoresPessoa, new String[]{"nome sobrenome", "iniciais"}), "Pessoa");
         
-        container.add(tabs);
-        
-        setContentPane(container);
+        setContentPane(tabs);
         setTitle("Formatador");
         setSize(512, 512);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
