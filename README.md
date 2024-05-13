@@ -36,5 +36,14 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
 Esse padrão é abundantemente usado nas classes de GUI do programa, visto que todo componente gráfico herda de uma mesma classe "Component/JComponent" e podem conter outros componentes (JPanel sendo um exemplo por excelência). O uso desse padrão se faz crucial, uma vez que permite criar componentes como composições de outros, do exato modo que as interfaces gráficas são construídas. Em um cenário em que essa composição não existe cada componente ficaria isolado, tornando muito mais trabalhosa e disfuncional a montagem da interface, ou até mesmo inviável.
 ### Singleton
 A classe Janela possui um método estático "getInstance()" que retorna sempre a mesma instância da classe, que é inicializada como nula e só é criada uma vez no método, se ainda não existir. Isso garante que, durante toda a execução do programa, haverá apenas uma única instância, proporcionando um único ponto de acesso global para essa funcionalidade.
+
+![image](https://github.com/ThiagoRamosVelozo/FormatadorSOLID/assets/87590852/6656ef98-f88f-4ab0-8ff5-e75f3f8e4204)
+
+<sup>https://en.m.wikipedia.org/wiki/File:Singleton_pattern_uml.png</sup>
+
 ### Observer
 Para conferir funcionalidade aos botões, por exemplo, utiliza-se do método "addActionListener", que associa um "Listener" ao evento do clique do botão. Isso é essencialmente uma implementação análoga do padrão Observer. O listener "escuta" a um dado evento e invoca um método ao "percebê-lo". Observa-se aqui a proposta básica desse padrão, algo nota um evento, desencadeando em uma ação.
+
+![image](https://github.com/ThiagoRamosVelozo/FormatadorSOLID/assets/87590852/8c31acca-87d6-4c98-b77f-65ece9de7d5b)
+
+<sup>https://pt.wikipedia.org/wiki/Observer#/media/Ficheiro:Observer.svg</sup>
