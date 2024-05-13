@@ -34,6 +34,11 @@ Basta executar o arquivo [FormatadorSOLID.jar](dist/FormatadorSOLID.jar) em conj
 ## 3 Design Patterns utilizados
 ### Composite
 Esse padrão é abundantemente usado nas classes de GUI do programa, visto que todo componente gráfico herda de uma mesma classe "Component/JComponent" e podem conter outros componentes (JPanel sendo um exemplo por excelência). O uso desse padrão se faz crucial, uma vez que permite criar componentes como composições de outros, do exato modo que as interfaces gráficas são construídas. Em um cenário em que essa composição não existe cada componente ficaria isolado, tornando muito mais trabalhosa e disfuncional a montagem da interface, ou até mesmo inviável.
+
+![image](https://github.com/ThiagoRamosVelozo/FormatadorSOLID/assets/87590852/ffd612bb-074e-4fa3-891a-e53411967540)
+
+<sup>https://en.wikipedia.org/wiki/Composite_pattern#/media/File:Composite_UML_class_diagram_(fixed).svg</sup>
+
 ### Singleton
 A classe Janela possui um método estático "getInstance()" que retorna sempre a mesma instância da classe, que é inicializada como nula e só é criada uma vez no método, se ainda não existir. Isso garante que, durante toda a execução do programa, haverá apenas uma única instância, proporcionando um único ponto de acesso global para essa funcionalidade.
 
